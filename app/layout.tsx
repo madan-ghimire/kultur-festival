@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import ScrollToTopButton from "@/components/scroll-to-top";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +30,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Font Awesome CDN */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-mLh9KQ+...replace_this_with_actual_key..."
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main> {children}</main>
+        <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
