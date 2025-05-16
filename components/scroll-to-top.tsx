@@ -26,7 +26,7 @@ function ScrollToTopButton() {
     <button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      className="fixed cursor-pointer bottom-6 right-6 z-50 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-white hover:text-black transition-colors"
+      className="fixed cursor-pointer bottom-6 right-6 z-50 bg-gray-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-white hover:text-black transition-colors"
     >
       <i className="fas fa-arrow-up"></i>
     </button>
