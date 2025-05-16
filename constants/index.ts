@@ -30,3 +30,9 @@ export const galleryImagesData = [
     title: "Partner och sponsorer",
   },
 ];
+
+export const images = [
+  "/images/slider1.png",
+  "/images/slider2.png",
+  "/images/2c5d7d0cd0b9d88f45dbb197f4b63fbf0f6fc1ad.png",
+];
